@@ -1,0 +1,8 @@
+.myImage{
+    height: 200px;
+    float: left;
+}
+#newImage{
+    height: 200px;
+    float: right;
+}

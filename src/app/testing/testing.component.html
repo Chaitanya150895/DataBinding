@@ -1,0 +1,16 @@
+
+<!-- String Interpolation -->
+1. <p>String Interpolation : {{ allowNewServer }}</p> 
+
+<!-- Property Binding without String Interpolation -->
+2. Property Binding : <p  [innerText] = "allowNewServer"></p>
+
+<!-- Event Binding -->
+3. Event Binding <button [disabled] = "allowNewServer" class="btn-danger" (click) = "onClick()">
+  Add new Server
+</button> <input type="text" (input) = "onUpdateServerName($event)">
+<p>{{serverName}}</p>
+<br><br>
+<!-- Two Way Binding -->
+4. Two Way Binding <input type="text"  [(ngModel)] = "serverName">
+<p>{{serverName}}</p>
